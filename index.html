@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Sally Student's homepage. This description is SEO optimized. SEO optimized. SEO optimized.">
+  <title>React | Sally Student | About Me </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="container"></div>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script type="text/babel">
+    const appRoot = document.querySelector('#container');
+
+    function App() {
+      return (
+        <div>
+          <header>
+            <h1>About Me</h1>
+          </header>
+
+          <main>
+            <section>
+              <h2>Education</h2>
+              <ul>
+                <li>
+                  <div>East High School 
+                  <span>2009 - 2013</span>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>High School Diploma</li>
+                    <li>GPA: 2.0</li>
+                  </ul>
+                </li>
+                <li>
+                  <div>Ball So Hard University       
+                    <span>2013 - 2017</span>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>MS in Philosophy</li>
+                    <li>GPA: 2.0</li>
+                  </ul>
+                </li>
+                <li>
+                  <div>Harvard University
+                    <span>2017 - 2023</span>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>Ph.D in Computer Science</li>
+                    <li>GPA: 4.0</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Employment</h2>
+              <ul>
+                <li>
+                  <div>McDonalds, Fry Cook 
+                    <span>May 2009 - September 2013</span>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>Wrote fire tweets</li>
+                  </ul>
+                </li>
+                <li>
+                  <div>Subway, Sandwich Artist
+                    <span>October 2013 - October 2017</span>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>Enthusiastic sandwich chef</li>
+                  </ul>
+                </li>
+                <li>
+                  <div>Tesla, Inc, CEO
+                    <span>2017 - 2023</span>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>Trolled the SEC, lost tons of money</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Contact Info</h2>
+              <p>Name: Sally Studious Student</p>
+              <address>
+                <a href="mailto:sally@stu.dent">Email: sally@stu.dent</a><br></br>
+                <a href="tel:911">Phone: 911</a>
+              </address>
+
+              <div>
+                <img src= "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+                alt= "This is me, and definitely not a photo of Ilana from Broad City."
+                width= "400" />
+              </div>
+            </section>
+          </main>
+        </div>
+      );
+    };
+
+    ReactDOM.render(
+      <App />,
+      appRoot
+    );
+
+
+  </script>
+</body>
+</html>
